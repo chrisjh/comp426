@@ -4,3 +4,40 @@ header {
 section.main {
   margin-top: 100px;
 }
+span.muted {
+  font-size: 67%;
+  color: #777777
+}
+.label {
+  padding: 5px;
+  margin-right: 3px;
+  font-weight: normal;
+}
+.list-group.expanded {
+  margin-bottom: 0;
+}
+.list-group.expanded > .list-group-item {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  background-color: #f5f5f5;
+}
+.comments {
+  margin: 0;
+}
+button.btn-comment {
+  margin-top: 10px;
+}
+.comment.new > .form-group {
+  margin-bottom: 0;
+}
+.img-user {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+}
+.trending {
+  text-align: center;
+}
+.random {
+  text-align: center;
+}
