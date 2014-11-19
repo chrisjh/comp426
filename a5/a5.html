@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="css/mockup.css">
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+  <script src="js/a5.js"></script>
 </head>
 
 <body>
@@ -28,10 +31,10 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a>
           </li>
-          <li><a href="a4.html">About</a>
+          <li><a href="info.html">About</a>
           </li>
-            <li><a href="olivia.html">Friends</a>
-            </li>
+          <li><a href="olivia.html">Friends</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -58,15 +61,49 @@
                 <span class="badge">88</span>
               </p>
               <span>
-                <button class="btn btn-default btn-sm">Follow</button>
+                <button disabled="" class="btn btn-default btn-sm">Follow</button>
               </span>
               <span>
-                <button class="btn btn-default btn-sm">Message</button>
+                <button disabled="" class="btn btn-default btn-sm">Message</button>
               </span>
             </div>
           </div>
         </div>
+
         <div class="col-md-6">
+          <div class="panel panel-default">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <textarea name="newpost" id="newpost" cols="45" rows="1"></textarea>
+                <button id="submitpost" class="btn btn-primary">Post</button>
+              </li>
+            </ul>
+          </div>
+          <div class="panel panel-default">
+            <ul id="postlist" class="list-group">
+              <li href="#" class="list-group-item">
+                <span class="whois">
+                  <img src="images/olivia.jpg" alt="">
+                  <a href="olivia.html">@oliviam: </a>
+                </span>
+                <span class="star"><i id='star0' class='star-icon fa fa-2x fa-star-o'></i>
+                </span>
+                An awesome post from <a class="at-mention" href="olivia.html">@olivam</a>.
+              </li>
+              <li href="#" class="list-group-item">
+                <span class="whois">
+                  <img src="images/chris.jpg" alt="">
+                  <a href="a5.html">@chris: </a>
+                </span>
+                <span class="star"><i id='star' class='star-icon fa fa-2x fa-star-o'></i>
+                </span>
+                This is one of your own posts!
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-6">
           <div class="panel panel-default">
             <div class="list-group">
               <a href="#" class="list-group-item">
@@ -153,37 +190,37 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="col-md-3">
           <div class="panel panel-default">
             <div class="panel-heading">Trending</div>
             <div class="panel-body trending">
-              <span class="label label-default pull-right">Startup</span>
-              <span class="label label-default pull-right">Product</span>
+              <span class="label label-default pull-right">ITS</span>
+              <span class="label label-default pull-right">KMP</span>
               <span class="label label-default pull-right">Apple</span>
-              <span class="label label-default pull-right">Mac</span>
-              <span class="label label-default pull-right">OSX</span>
+              <span class="label label-default pull-right">Windows</span>
+              <span class="label label-default pull-right">iPhone</span>
               <br>
-              <span class="label label-default pull-right">Yosemite</span>
+              <span class="label label-default pull-right">Graduation</span>
               <span class="label label-default pull-right">CS</span>
               <span class="label label-default pull-right">Level</span>
-              <span class="label label-default pull-right">Econ</span>
-              <span class="label label-default pull-right">Tesla</span>
+              <span class="label label-default pull-right">Music</span>
+              <span class="label label-default pull-right">UNC</span>
             </div>
           </div>
 
           <div class="panel panel-default">
             <div class="panel-heading">Random</div>
             <div class="panel-body random">
-              <button class="btn btn-default">Random Post</button>
+              <button disabled class="btn btn-default">Random Post</button>
             </div>
           </div>
+
         </div>
-
+      </div>
     </section>
-
-    </div>
+  </div>
 
 </body>
 

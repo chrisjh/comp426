@@ -21,6 +21,9 @@ span.muted {
   border-top-left-radius: 0;
   background-color: #f5f5f5;
 }
+.list-group-item {
+  word-wrap: break-word;
+}
 .comments {
   margin: 0;
 }
@@ -40,4 +43,22 @@ button.btn-comment {
 }
 .random {
   text-align: center;
+}
+.star {
+  float: right;
+}
+.whois {
+  width: 20px;
+}
+.whois > img {
+  height: auto;
+  width: 30px;
+  border-radius: 50%;
+}
+#newpost {
+  height: 30px;
+}
+#submitpost {
+  margin-top: -2em;
+  margin-left: 2em;
 }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Level</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mockup.css">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+  <script src="js/a5.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Level</a>
+      </div>
+      <div class="navbar-collapse collapse navbar-inverse-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="a5.html">Home</a>
+          </li>
+          <li><a href="info.html">About</a>
+          </li>
+          <li class="active"><a href="olivia.html">Friends</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <section class="main">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <img class="img-responsive img-rounded" src="images/olivia.jpg" alt="">
+            <div class="panel-body">
+              <h4>Olivia Meyers
+                <span class="muted">@oliviam</span>
+              </h4>
+              <p>Followers
+                <span class="badge">100</span>
+              </p>
+              <p>Following
+                <span class="badge">54</span>
+              </p>
+              <p>Posts
+                <span class="badge">25</span>
+              </p>
+              <span>
+                <button id="follow" class="btn btn-default btn-sm">Follow</button>
+              </span>
+              <span>
+                <button disabled class="btn btn-default btn-sm">Message</button>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <textarea name="newpost" id="newpost" cols="45" rows="1"></textarea>
+                <button id="submitpost" class="btn btn-primary">Post</button>
+              </li>
+            </ul>
+          </div>
+          <div class="panel panel-default">
+            <ul id="postlist" class="list-group">
+              <li href="#" class="list-group-item">
+                <span class="whois">
+                  <img src="images/olivia.jpg" alt="">
+                  <a href="olivia.html">@oliviam: </a>
+                </span>
+                <span class="star"><i id='star0' class='star-icon fa fa-2x fa-star-o'></i>
+                </span>
+                An awesome post from <a class="at-mention" href="olivia.html">@olivam</a>.
+              </li>
+              <li href="#" class="list-group-item">
+                <span class="whois">
+                  <img src="images/chris.jpg" alt="">
+                  <a href="a5.html">@chris: </a>
+                </span>
+                <span class="star"><i id='star' class='star-icon fa fa-2x fa-star-o'></i>
+                </span>
+                This is one of your own posts!
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">Trending</div>
+            <div class="panel-body trending">
+              <span class="label label-default pull-right">ITS</span>
+              <span class="label label-default pull-right">KMP</span>
+              <span class="label label-default pull-right">Apple</span>
+              <span class="label label-default pull-right">Windows</span>
+              <span class="label label-default pull-right">iPhone</span>
+              <br>
+              <span class="label label-default pull-right">Graduation</span>
+              <span class="label label-default pull-right">CS</span>
+              <span class="label label-default pull-right">Level</span>
+              <span class="label label-default pull-right">Music</span>
+              <span class="label label-default pull-right">UNC</span>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Random</div>
+            <div class="panel-body random">
+              <button disabled class="btn btn-default">Random Post</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+
+</html>
